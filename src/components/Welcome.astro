@@ -12,17 +12,22 @@ import SocialLinks from "./SocialLinks.astro";
         src={photo}
         height="300"
         width="300"
-        class="size-40 shrink-0 rounded-4xl object-cover md:size-[300px] hover:scale-105 hover:-rotate-3 transition-transform duration-200"
+        loading="eager"
+        class="size-40 shrink-0 rounded-4xl object-cover md:size-75 hover:scale-105 hover:-rotate-3 transition-transform duration-200"
         layout="constrained"
       />
       <div class="flex max-w-3xl flex-col items-center gap-3 text-center md:items-start md:text-left">
-        <h1 class="text-3xl font-bold md:text-4xl">Hi! I'm Latch</h1>
-        <p>A software engineer and designer based in London.</p>
-        <p>
+        <h1 class="text-3xl font-bold md:text-[3.375rem]">Hi! I'm Latch</h1>
+        <p class="text-sm md:text-lg">
+          A software engineer and designer based in London.
+        </p>
+        <p class="text-sm md:text-lg">
           I'm an animation graduate who followed my curiosity about computers
           and the web and became a developer.
         </p>
-        <p>Say hello on LinkedIn, or see what I'm building on GitHub.</p>
+        <p class="text-sm md:text-lg">
+          Say hello on LinkedIn, or see what I'm building on GitHub.
+        </p>
         <SocialLinks class="mt-2" />
       </div>
     </div>

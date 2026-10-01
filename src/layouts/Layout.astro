@@ -35,6 +35,8 @@ const {
       class="fixed top-0 left-0 -z-1 h-full w-full blur-[100px]"
     />
     <Nav />
-    <slot />
+    <div class="flex flex-1 flex-col [view-transition-name:page]">
+      <slot />
+    </div>
   </body>
 </html>
